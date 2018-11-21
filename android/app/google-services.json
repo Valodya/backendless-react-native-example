@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "555792262217",
+    "firebase_url": "https://blpushdemo-c81b4.firebaseio.com",
+    "project_id": "blpushdemo-c81b4",
+    "storage_bucket": "blpushdemo-c81b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555792262217:android:f1fce9c35ea307de",
+        "android_client_info": {
+          "package_name": "com.blpushdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555792262217-6fsb3cdsbr1bvbsmomqr51austv3galh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzD65u161XGmWXnyr-ljRNOKRsvQ6lmyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
