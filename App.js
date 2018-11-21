@@ -8,6 +8,13 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import Backendless from 'backendless'
+
+const APP_ID = '54AED425-5613-CDD4-FFB3-F3443977FA00';
+const APP_KEY = 'D82A3D3B-4B7C-242B-FF2A-5D7987E57200';
+
+Backendless.initApp(APP_ID, APP_KEY);
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
