@@ -1,3 +1,5 @@
 rootProject.name = 'RNPushDemo'
+include ':backendless-react-native'
+project(':backendless-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/backendless-react-native/android')
 
 include ':app'

@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "backendless": "^5.2.0",
+    "backendless-react-native": "0.0.12",
     "react": "16.6.1",
     "react-native": "0.57.5"
   },

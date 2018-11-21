@@ -9,9 +9,10 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Backendless from 'backendless'
+import 'backendless-react-native'
 
-const APP_ID = '54AED425-5613-CDD4-FFB3-F3443977FA00';
-const APP_KEY = 'D82A3D3B-4B7C-242B-FF2A-5D7987E57200';
+const APP_ID = '5337DEB0-BE36-32E7-FF41-891739299E00';
+const APP_KEY = 'A88CFC7D-552B-284D-FF78-566845955400';
 
 Backendless.initApp(APP_ID, APP_KEY);
 
