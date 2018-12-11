@@ -26,6 +26,27 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  constructor(props) {
+    super(props);
+
+    Backendless.Messaging.registerDevice(['default'])
+      .then(r => console.log('registerDevice:', r))
+      .catch(e => console.log('registerDevice:', e));
+  }
+
+  componentDidMount() {
+    Backendless.Messaging.addPushNotificationListener(this.onNotification);
+  }
+
+  componentWillUnmount() {
+    Backendless.Messaging.removePushNotificationListener(this.onNotification);
+  }
+
+  onNotification = notification => {
+    console.log('notification', notification)
+  };
+
   render() {
     return (
       <View style={styles.container}>
