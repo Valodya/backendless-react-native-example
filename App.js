@@ -12,10 +12,13 @@ import Backendless from 'backendless'
 import 'backendless-react-native'
 
 const APP_ID = '5337DEB0-BE36-32E7-FF41-891739299E00';
-const APP_KEY = 'A88CFC7D-552B-284D-FF78-566845955400';
 
-Backendless.initApp(APP_ID, APP_KEY);
+const API_KEY = Platform.select({
+  ios    : '4C3131C8-0D7C-96D0-FFDB-C6C819009300',
+  android: 'A88CFC7D-552B-284D-FF78-566845955400'
+});
 
+Backendless.initApp(APP_ID, API_KEY);
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
